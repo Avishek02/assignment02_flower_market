@@ -161,6 +161,57 @@ body {
 
 
 
+/* Join Brunch section style  */
+.section-join-brunch{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../assets/news-letter-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 530px;
+    opacity: 1;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+.join-brunch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+
+.join-brunch-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+form{
+    display: flex;
+    width: 125%;
+}
+
+form input{
+    flex: 1;
+    padding: .5rem 1.25rem;
+}
+
+.btn-subscribe{
+    background-color: #E95A08;
+    color: #FFFFFF;
+    padding: 1rem 3rem;
+    border: none;
+    flex: 0 0 30%;
+}
+
+
+
 
 
 /* Animations */
