@@ -1,0 +1,63 @@
+/* universal styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5F8FF;
+}
+
+
+/* shared styles */
+.color-primary{
+    color: #E95A08;
+}
+
+
+
+/* navbar styles */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 150px 120px;
+}
+
+.nav-menu-items{
+    display: flex;
+    gap: 48px;
+}
+
+.nav-menu-items a{
+    text-decoration: none;
+    margin-right: 
+}
+
+#menu-item-home{
+    color: rgba(37, 36, 50, 1);
+    font-weight: 600;
+}
+
+#menu-item-shop, 
+#menu-item-about{
+    color: rgba(137, 135, 161, 1);
+}
+
+#menu-item-cart{
+    color: #000000;
+}
+
+
+
+/* Banner styles */
+.banner{
+    display: flex;
+    margin: 0 150px 120px;
+    align-items: flex-end;
+}
+
+.banner-description{
+    color: rgba(0, 0, 0, 0.5);
+}
