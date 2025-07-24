@@ -1,63 +1,175 @@
 /* universal styles */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #F5F8FF;
 }
 
 
 /* shared styles */
-.color-primary{
+.color-primary {
     color: #E95A08;
 }
 
 
 
 /* navbar styles */
-.nav-container{
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 30px 150px 120px;
 }
 
-.nav-menu-items{
+.nav-menu-items {
     display: flex;
     gap: 48px;
 }
 
-.nav-menu-items a{
+.nav-menu-items a {
     text-decoration: none;
-    margin-right: 
+    margin-right:
 }
 
-#menu-item-home{
+#menu-item-home {
     color: rgba(37, 36, 50, 1);
     font-weight: 600;
 }
 
-#menu-item-shop, 
-#menu-item-about{
+#menu-item-shop,
+#menu-item-about {
     color: rgba(137, 135, 161, 1);
 }
 
-#menu-item-cart{
+#menu-item-cart {
     color: #000000;
 }
 
 
 
 /* Banner styles */
-.banner{
+.banner {
     display: flex;
     margin: 0 150px 120px;
     align-items: flex-end;
 }
 
-.banner-description{
+.banner-description {
     color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+/* Our Plants Section  */
+
+.section-our-plants {
+    margin: 0 150px 210px;
+}
+
+.our-plants-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+.our-plants-products-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 30px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.btn-add-to-cart {
+    background-color: #E95A08;
+    color: #FFFFFF;
+    width: 100%;
+    padding: 15px 50px;
+    border: none;
+}
+
+
+
+
+/* Flower and Plants lovers Section starts styles */
+.section-plants-lover {
+    display: flex;
+    gap: 60px;
+    margin: 0 150px 130px;
+    align-items: center;
+}
+
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img-flower-store {
+    display: block;
+}
+
+.img-trusted {
+    position: absolute;
+    top: -120px;
+    right: -100px;
+    width: 286px;
+    height: 286px;
+    animation: spin 5s linear infinite;
+}
+
+.plants-lover-description {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.plants-lover-description li{
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* Animations */
+/* trusted badge animation */
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
