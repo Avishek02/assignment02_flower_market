@@ -30,7 +30,7 @@ body {
 
 }
 
-.text-alignment{
+.text-center {
     text-align: center;
 }
 
@@ -77,7 +77,7 @@ body {
     align-items: flex-end;
 }
 
-.banner-title{
+.banner-title {
     font-size: 3.5rem;
 }
 
@@ -133,13 +133,13 @@ body {
     gap: 1.125rem;
 }
 
-.product-name{
+.product-name {
     font-weight: 500;
     color: #111111;
     text-align: center;
 }
 
-.product-price{
+.product-price {
     font-weight: 700;
     color: #111111;
     text-align: center;
@@ -193,6 +193,89 @@ body {
 
 .plants-lover-description li {
     margin-bottom: 20px;
+}
+
+
+/* Latest Deals styles  */
+.section-latest-deals {
+    margin: 0 150px 120px;
+}
+
+
+
+.latest-deals-headings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 120px;
+}
+
+
+.deals-container {
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.75rem;
+}
+
+.deals-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 100%;
+}
+
+.deal-first,
+.deal-second {
+    flex: 1;
+    min-height: 12.5rem;
+}
+
+.deals {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    color: #FFFFFF;
+    border-radius: 1rem;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.deals h3 {
+    font-size: 1.25rem;
+}
+
+.deals h2{
+    font-size: 2.5rem;
+}
+
+.deals a {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.deal-third a{
+    font-size: 1.75rem;
+}
+
+
+
+.deal-first {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url('../assets/deal-bloom.png');
+}
+
+.deal-second {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url('../assets/deal-ana.png');
+}
+
+.deal-third {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url('../assets/deal-zabo.png');
+    height: 100%;
 }
 
 
@@ -262,14 +345,14 @@ footer {
     margin: 0 150px 50px;
 }
 
-.brand-details{
+.brand-details {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     /* background-color: aqua; */
 }
 
-.brand-details img{
+.brand-details img {
     width: 50%;
 }
 
