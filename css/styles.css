@@ -41,12 +41,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 150px 120px;
+    margin: 1.9rem 9.375rem 7.5rem;
 }
 
 .nav-menu-items {
     display: flex;
-    gap: 48px;
+    gap: 3rem;
 }
 
 .nav-menu-items a {
@@ -72,7 +72,7 @@ body {
 /* Banner styles */
 .banner {
     display: flex;
-    margin: 0 150px 120px;
+    margin: 0 9.375rem 7.5rem;
     align-items: flex-end;
 }
 
@@ -90,7 +90,7 @@ body {
 /* Our Plants Section  */
 
 .section-our-plants {
-    margin: 0 150px 210px;
+    margin: 0 9.375rem 13.125rem;
 }
 
 .our-plants-heading {
@@ -110,7 +110,7 @@ body {
 .product {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 1.9;
 }
 
 .product-img {
@@ -150,7 +150,7 @@ body {
     background-color: #E95A08;
     color: #FFFFFF;
     width: 100%;
-    padding: 15px 50px;
+    padding: 1rem 3.1rem;
     border: none;
     font-size: 1rem;
     font-weight: 600;
@@ -162,8 +162,8 @@ body {
 /* Flower and Plants lovers Section starts styles */
 .section-plants-lover {
     display: flex;
-    gap: 60px;
-    margin: 0 150px 130px;
+    gap: 3.75rem;
+    margin: 0 9.375rem 8.125rem;
     align-items: center;
 }
 
@@ -182,28 +182,28 @@ body {
 
 .img-trusted {
     position: absolute;
-    top: -120px;
-    right: -100px;
-    width: 286px;
-    height: 286px;
+    top: -7.5rem;
+    right: -6.35rem;
+    width: 17.875rem;
+    height: 17.875rem;
     animation: spin 5s linear infinite;
 }
 
 .plants-lover-description {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
     flex: 1;
 }
 
 .plants-lover-description li {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 
 /* Latest Deals styles  */
 .section-latest-deals {
-    margin: 0 150px 120px;
+    margin: 0 9.375rem 7.5rem;
 }
 
 
@@ -213,7 +213,7 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 120px;
+    margin-bottom: 7.5rem;
 }
 
 
@@ -289,7 +289,7 @@ body {
 
 /* Join Brunch section style  */
 .section-join-brunch {
-    margin-bottom: 50px;
+    margin-bottom: 3.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -298,7 +298,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    min-height: 530px;
+    min-height: 33.125rem;
     opacity: 1;
     color: #FFFFFF;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -350,7 +350,7 @@ footer {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 2fr;
     grid-gap: 7rem;
-    margin: 0 150px 50px;
+    margin: 0 9.375rem 3.125rem;
 }
 
 .brand-details {
@@ -537,7 +537,7 @@ footer li a {
     }
 
     form {
-        width: 100%;
+        max-width: 100%;
     }
 
     .btn-subscribe {
