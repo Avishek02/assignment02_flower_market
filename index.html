@@ -140,7 +140,7 @@
                     <img src="assets/sample-flower-image.png" alt="" class="product-img">
                     <div class="product-details">
                         <div class="product-description">
-                            <h3 class="product-name">Velvet Orchid Florals</h3>
+                            <h3 class="product-name">Velveet Orchid Florals</h3>
                             <h3 class="product-price">24.99 USD</h3>
                         </div>
 
@@ -230,7 +230,8 @@
     <footer>
         <div class="brand-details">
             <img src="assets/logo.png" alt="">
-            <p class="brand-description font-secondary">Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
+            <p class="brand-description font-secondary">Indulge your senses with the beauty and fragrance of our fresh
+                flower shop. </p>
         </div>
         <div class="menu-items">
             <ul class="menu-items-one">
@@ -257,6 +258,18 @@
             <img src="assets/icon-youtube.png" alt="" class="youtube">
         </div>
     </footer>
+
+
+    <!-- Script starts  -->
+    <script>
+        document.querySelectorAll(".btn-add-to-cart").forEach(function (button) {
+            button.addEventListener("click", function () {
+                alert("Flower Added to Cart");
+            });
+        });
+    </script>
+
+
 </body>
 
 </html>
