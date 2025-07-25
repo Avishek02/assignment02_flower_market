@@ -51,7 +51,6 @@ body {
 
 .nav-menu-items a {
     text-decoration: none;
-    margin-right:
 }
 
 #menu-item-home {
@@ -98,14 +97,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
-    margin-bottom: 50px;
+    gap: 1rem;
+    margin-bottom: 3.1rem;
 }
 
 .our-plants-products-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px 30px;
+    gap: 1.9rem 1.25rem;
 }
 
 .product {
@@ -153,6 +152,8 @@ body {
     width: 100%;
     padding: 15px 50px;
     border: none;
+    font-size: 1rem;
+    font-weight: 600;
 }
 
 
@@ -170,10 +171,13 @@ body {
 .img-container {
     position: relative;
     display: inline-block;
+    flex: 1;
 }
 
 .img-flower-store {
     display: block;
+    width: 100%;
+
 }
 
 .img-trusted {
@@ -189,6 +193,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    flex: 1;
 }
 
 .plants-lover-description li {
@@ -226,6 +231,7 @@ body {
     height: 100%;
 }
 
+
 .deal-first,
 .deal-second {
     flex: 1;
@@ -249,7 +255,7 @@ body {
     font-size: 1.25rem;
 }
 
-.deals h2{
+.deals h2 {
     font-size: 2.5rem;
 }
 
@@ -259,7 +265,7 @@ body {
     font-weight: 600;
 }
 
-.deal-third a{
+.deal-third a {
     font-size: 1.75rem;
 }
 
@@ -276,6 +282,7 @@ body {
 .deal-third {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4)), url('../assets/deal-zabo.png');
     height: 100%;
+    min-height: 26.5rem;
 }
 
 
@@ -286,9 +293,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../assets/news-letter-bg.png');
-    background-size: contain;
+    background-image: linear-gradient(rgba(7, 51, 79, 0.4)), url('../assets/news-letter-bg.png');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     min-height: 530px;
     opacity: 1;
@@ -349,7 +357,6 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    /* background-color: aqua; */
 }
 
 .brand-details img {
@@ -369,6 +376,8 @@ footer li {
 
 footer li a {
     text-decoration: none;
+    /* font-size: 1.5rem; */
+    color: gray;
 }
 
 .social-media-links {
@@ -394,4 +403,160 @@ footer li a {
     100% {
         transform: rotate(360deg);
     }
+}
+
+
+
+/* Mobile responsive styles */
+@media only screen and (max-width:576px) {
+
+    .nav-container {
+        margin: 1rem 1rem 1.75rem;
+    }
+
+    #menu-item-home,
+    #menu-item-shop,
+    #menu-item-about {
+        display: none;
+    }
+
+
+
+    /* Banner styles  */
+    .banner {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .banner-text {
+        margin: 1.75rem 1rem 0;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+    }
+
+    .banner-description {
+        font-size: 1rem;
+    }
+
+
+    /* Our plants styles  */
+    .section-our-plants {
+        margin: 4rem 1rem 2.5rem;
+    }
+
+    .our-plants-heading {
+        margin-bottom: 1.75rem;
+    }
+
+    .our-plants-title {
+        font-size: 1.5rem;
+    }
+
+    .our-plants-description {
+        font-size: 1rem;
+    }
+
+    .our-plants-products-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-name,
+    .product-price {
+        font-size: 1rem;
+    }
+
+
+    /* Plants Lovers styels  */
+    .section-plants-lover {
+        flex-direction: column;
+        gap: 1.125rem;
+        margin: 0 1rem 9rem;
+    }
+
+    .img-trusted {
+        display: none;
+    }
+
+    .plants-lover-title {
+        font-size: 1.5rem;
+    }
+
+    .plants-lover-description li {
+        font-size: 0.9rem;
+    }
+
+
+    /* Latest deals styles  */
+
+    .section-latest-deals {
+        margin: 0 1rem 2.5rem;
+    }
+
+    .latest-deals-headings {
+        margin-bottom: 3.2rem;
+    }
+
+    .latest-deals-title {
+        font-size: 1.5rem;
+    }
+
+    .latest-deals-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .deals-container {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .deals {
+        min-height: 11.5rem;
+    }
+
+    .deals h3,
+    .deals h2 {
+        font-size: 1.25rem;
+    }
+
+    .deals a {
+        font-size: 1rem;
+    }
+
+
+
+    /* Join Brunch section styles  */
+    .section-join-brunch {
+        min-height: 17.2rem;
+    }
+
+
+    .join-brunch-title {
+        font-size: 1.25rem;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    .btn-subscribe {
+        font-size: 1rem;
+    }
+
+
+
+    /* Footer styles  */
+    footer {
+        margin: 0 1.25rem 3.125rem;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    footer .brand-description {
+        font-size: 1rem;
+    }
+
+
+
 }
